@@ -7,10 +7,10 @@ spec:
   project: default  
   destination:
     namespace: test4argocdapp  #update namespace name if you wish
-    name:  k8stest-a37a51yo.hcp.eastus.azmk8s.io  #update cluster name if its different
+    name: in-cluster  #update cluster name if its different
   source:
     repoURL: 'https://github.com/davidboukari/test4argocd.git/'  #replace with your username
-    path: charts/
+    path: nginx/charts
     targetRevision: HEAD
     helm:
       valueFiles:
