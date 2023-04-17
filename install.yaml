@@ -11,8 +11,8 @@ spec:
   source:
     repoURL: 'https://github.com/davidboukari/test4argocd.git/'  #replace with your username
     path: nginx
-#    path: nginx/charts
-    targetRevision: HEAD
+    path: nginx/charts/common
+#    targetRevision: HEAD
     helm:
       valueFiles:
         - values.yaml #any custom value file you want to apply.
