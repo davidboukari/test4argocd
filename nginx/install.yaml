@@ -10,7 +10,7 @@ spec:
     name: in-cluster  #update cluster name if its different
   source:
     repoURL: 'https://github.com/davidboukari/test4argocd.git/'  #replace with your username
-    path: charts/nginx
+    path: nginx/charts
     targetRevision: HEAD
     helm:
       valueFiles:
