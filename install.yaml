@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: test4argocdapp-git
+  name: test4argocdapp
   namespace: argocd
 spec:
   project: default  
@@ -10,7 +10,8 @@ spec:
     name: in-cluster  #update cluster name if its different
   source:
     repoURL: 'https://github.com/davidboukari/test4argocd.git/'  #replace with your username
-    path: nginx/charts
+    path: nginx
+#    path: nginx/charts
     targetRevision: HEAD
     helm:
       valueFiles:
